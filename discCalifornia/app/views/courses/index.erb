@@ -1,0 +1,50 @@
+<h1>Course Index</h1>
+
+<table>
+	<tr>
+		<th>Link</th>
+		<th>Name</th>
+		<th>address</th>
+		<th>city</th>
+		<th>state</th>
+		<th>zip</th>
+		<th>hole_count</th>
+		<th>course_condition</th>
+		<th>hole_type</th>
+		<th>tee_type</th>
+		<th>lat</th>
+		<th>long</th>
+		<th>pay</th>
+		<th>private</th>
+		<th>ave_score</th>
+		<th>played</th>
+		<th>comments</th>
+	</tr>
+
+	<% @courses.each do |course| %>
+		<tr>
+
+			 <td><a href="/courses/<%= course.id %>">View Course</a></h3>
+			
+	    	<td><%= course.name %></td>
+	    	<td><%= course.address %></td>
+	    	<td><%= course.city %></td>
+	    	<td><%= course.state %></td>
+	    	<td><%= course.zip %></td>
+	    	<td><%= course.hole_count %></td>
+	    	<td><%= course.course_condition %></td>
+	    	<td><%= course.hole_type %></td>
+	    	<td><%= course.tee_type %></td>
+	    	<td><%= course.lat %></td>
+	    	<td><%= course.long %></td>
+	    	<td><%= course.pay %></td>
+	    	<td><%= course.private %></td>
+	    	<td><%= course.ave_score %></td>
+	    	<td><%= course.played %></td>
+	    	<td><%= course.comments %></td>
+	 	</tr>
+	<% end %>
+</table>
+
+        
+
