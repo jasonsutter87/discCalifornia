@@ -1,1 +1,32 @@
 <h1>Round New</h1>
+
+<%= @course.name %><br>
+<%= @course.address %><br>
+<%= @course.city %><br>
+<%= @course.state %><br>
+<%= @course.zip %><br>
+<%= @course.hole_count %><br>
+
+<h3><%= @course.course_condition %><br></h3>
+
+<%= @course.hole_type %><br>
+<%= @course.tee_type %><br>
+<%= @course.lat %><br>
+<%= @course.long %><br>
+<%= @course.pay %><br>
+<%= @course.private %><br>
+
+<!-- <h3><%#= @course.ave_score %><br></h3> -->
+<h3><%= @course.played %><br></h3>
+
+
+<%= @course.hole_count.times  do |hole| %>
+	<% if  hole !=  0 %>
+		<div>
+			<%= hole %>
+		</div>
+	
+	<% end %>	
+<% end %>
+	
+

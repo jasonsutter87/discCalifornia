@@ -22,9 +22,9 @@ ActiveRecord::Schema.define(version: 20170315214429) do
     t.string   "state"
     t.string   "zip"
     t.integer  "hole_count"
-    t.integer  "course_condition"
-    t.integer  "hole_type"
-    t.integer  "tee_type"
+    t.string   "course_condition"
+    t.string   "hole_type"
+    t.string   "tee_type"
     t.string   "lat"
     t.string   "long"
     t.string   "pay"
@@ -48,7 +48,6 @@ ActiveRecord::Schema.define(version: 20170315214429) do
 
   create_table "rounds", force: :cascade do |t|
     t.string   "course_name"
-    t.integer  "course_avg"
     t.integer  "hole_count"
     t.integer  "course_id"
     t.integer  "player_id"

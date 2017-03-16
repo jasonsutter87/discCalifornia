@@ -21,7 +21,6 @@ user = User.create(
 # Create a card
 round = Round.create(
   course_name: "Rocklin Disc Golf",
-  course_avg:  55,
   hole_count: 18,
   course_id: 1,
   player_id: 1

@@ -7,9 +7,9 @@ class CreateCourses < ActiveRecord::Migration[5.0]
       t.string :state
       t.string :zip
       t.integer :hole_count
-      t.integer :course_condition
-      t.integer :hole_type
-      t.integer :tee_type
+      t.string :course_condition
+      t.string :hole_type
+      t.string :tee_type
       t.string :lat
       t.string :long
       t.string :pay
